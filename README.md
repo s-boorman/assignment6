@@ -1,13 +1,16 @@
 # Implementation Description
+1. The biggest opportunity for code improvement from assignment 1 was to use a software pattern. In this instance, the
+decorator pattern made the most sense. This gave the flexibility in my code to add classes (beverages) on the fly while
+also utilizing the decorator (for condiments) which both have "is a/has a" relationship. 
+2. The next opportunity for 
+refactoring was how condiments were tracked. The decorator pattern allowed for parameter in the constructor for the
+condiment which very easily allowed for a maximum of each condiment. This results in a more robust code solution and 
+an overall cleaner implementation. 
+3. Finally, I was able to remove "redundant" code. In an earlier implementation, there was a class called "CoffeeMachine" 
+and another called "TeaMachine" that acted identically except for the names of the methods that produced the different
+beverages. With this implementation, every drink gets its own class from a super class "Drink," so the redundant code
+was removed. 
 
-There is not much in the main.java file as it was interpreted in the assignment document that the JUnit tests would be
-used to mimic user interaction and there would be no need for CLI inputs. 
-
-This implementation is flexible in that it would be fairly easy to add new coffee or tea drinks to its capabilities
-by adding it to the drinkOptions array. If the new drinks are neither, consider adding a new class that extends Drink. 
-It is a very simple design with very few attributes and methods for each class, everything was named as saliently
-as possible. The effective way of avoiding duplicated code was to have common attributes/methods in the parent
-class that could be inherited to children classes.
 
 
 # Project Template
