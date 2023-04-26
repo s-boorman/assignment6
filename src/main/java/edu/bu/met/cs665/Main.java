@@ -1,3 +1,11 @@
+/**
+ * Name: Stephen Boorman
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 04/27/2023
+ * File Name: Main.java
+ * Description: This is the main class for this program
+ */
+
 package edu.bu.met.cs665;
 
 public class Main {
